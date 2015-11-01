@@ -1,13 +1,13 @@
-# laravel-emailVerifier
+# laravel-email-validator
 
-[![Latest Stable Version](https://poser.pugx.org/busayo/laravel-yearly/v/stable.svg)](https://packagist.org/packages/busayo/laravel-yearly)
+[![Latest Stable Version](https://poser.pugx.org/busayo/laravel-yearly/v/stable.svg)](https://packagist.org/packages/unicodeveloper/laravel-email-validator)
 ![](https://img.shields.io/badge/unicodeveloper-approved-brightgreen.svg)
-[![License](https://poser.pugx.org/busayo/laravel-yearly/license.svg)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/busayo/laravel-yearly.svg)](https://travis-ci.org/busayo/laravel-yearly)
-[![Quality Score](https://img.shields.io/scrutinizer/g/busayo/laravel-yearly.svg?style=flat-square)](https://scrutinizer-ci.com/g/busayo/laravel-yearly)
-[![Total Downloads](https://img.shields.io/packagist/dt/busayo/laravel-yearly.svg?style=flat-square)](https://packagist.org/packages/busayo/laravel-yearly)
+[![License](https://poser.pugx.org/unicodeveloper/laravel-email-validator/license.svg)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/unicodeveloper/laravel-email-validator.svg)](https://travis-ci.org/unicodeveloper/laravel-email-validator)
+[![Quality Score](https://img.shields.io/scrutinizer/g/unicodeveloper/laravel-email-validator.svg?style=flat-square)](https://scrutinizer-ci.com/g/unicodeveloper/laravel-email-validator)
+[![Total Downloads](https://img.shields.io/packagist/dt/unicodeveloper/laravel-email-validator.svg?style=flat-square)](https://packagist.org/packages/unicodeveloper/laravel-email-validator)
 
-> Laravel 5 Package to help keep your copyright year up-to-date. Simple but insanely useful.
+> Laravel 5 Package to help validate and verify your email addresses.
 
 ## Install
 
@@ -16,13 +16,13 @@
 Via Composer
 
 ``` bash
-$ composer require unicodeveloper/laravel-emailVerifier
+$ composer require unicodeveloper/laravel-email-validator
 ```
 
 Another alternative is to simply add the following line to the require block of your `composer.json` file.
 
 ```
-"unicodeveloper/laravel-emailVerifier": "1.0.*"
+"unicodeveloper/laravel-email-validator": "1.0.*"
 ```
 
 Then run `composer install` or `composer update` to download it and have the autoloader updated.
