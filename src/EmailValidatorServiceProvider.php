@@ -3,6 +3,7 @@
 namespace Unicodeveloper\EmailValidator;
 
 use Illuminate\Support\ServiceProvider;
+use Unicodeveloper\EmailValidator\EmailValidator;
 
 class EmailValidatorServiceProvider extends ServiceProvider
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Unicodeveloper\Yearly;
+namespace Unicodeveloper\EmailValidator;
 
 use Illuminate\Support\Facades\Facade;
 
-class YearlyFacade extends Facade
+class EmailValidatorFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class YearlyFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel-yearly';
+        return 'laravel-email-validator';
     }
 }

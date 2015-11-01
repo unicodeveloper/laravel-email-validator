@@ -2,17 +2,45 @@
 
 namespace Unicodeveloper\EmailValidator;
 
-use InvalidArgumentException;
+use QuickEmailVerification\Client;
 
 class EmailValidator
 {
+
     /**
-     * Gets the Current Year
-     * @return integer
+     * Api Key for quickemailverficationservice
+     * @var string
      */
-    public function current_year()
+    public $apiKey = '12ed5f648f0e90b1740d7bbfd83f832e2a879eb48de4173bb0008d0c4799';
+
+    /**
+     *  Instance of QuickEmailVerification Client
+     * @var [type]
+     */
+    public $client;
+
+    public function __construct()
     {
-        return date("Y");
+        $this->setApiKey();
+    }
+
+    /**
+     * Set Apikey from the Config file
+     */
+    public function setApiKey()
+    {
+        $this->client = new Client($this->apiKey);
+    }
+
+    /**
+     * Verify Email Address
+     * @param  string $emailAddress
+     * @return boolean
+     */
+    public function verify($emailAddress)
+    {
+        $response = $this->client->quickemailverification()->verify($emailAddress);
+        var_dump($response);
     }
 
 
