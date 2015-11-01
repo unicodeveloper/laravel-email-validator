@@ -1,0 +1,52 @@
+{
+    "name": "unicodeveloper/laravel-email-validator",
+    "description": "Provides helper function to validate and verify email addresses",
+    "keywords": [
+        "busayo",
+        "laravel-email-validator",
+        "laravel",
+        "validate",
+        "verify",
+        "year",
+        "email-validator",
+        "email-verifier"
+    ],
+    "homepage": "https://github.com/busayo/laravel-email-validator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "unicodeveloper",
+            "email": "prosperotemuyiwa@gmail.com",
+            "homepage": "http://goodheads.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Unicodeveloper\\EmailValidator\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Unicodeveloper\\EmailValidator\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
