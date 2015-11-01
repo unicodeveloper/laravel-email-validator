@@ -127,7 +127,7 @@ EmailValidator::verify('kkkkk@example.com')->getDomainName()
 ```php
 /**
  * Get the local part of an email address
- * Example: prosperotemuyiwa@gmail.com returns prosperotemuyiwa
+ * Example: kkkkk@example.com returns kkkkk
  * @return string
  */
 EmailValidator::verify('kkkkk@example.com')->getUser()
@@ -136,7 +136,7 @@ EmailValidator::verify('kkkkk@example.com')->getUser()
 ```php
 /**
  * Gets a normalized version of the email address
- * Example: ProsperOtemuyiwa@gmail.com returns prosperotemuyiwa@gmail.com
+ * Example: KkkKk@example.com returns kkkkk@gmail.com
  * @return string
  */
 EmailValidator::verify('kkkkk@example.com')->getEmailAddress()
