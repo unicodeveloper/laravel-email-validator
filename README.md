@@ -35,7 +35,7 @@ Add this to your providers array in `config/app.php`
 
 'providers' => [
     ...
-    'Unicodeveloper\EmailValidator\EmailValidatorServiceProvider',
+    Unicodeveloper\EmailValidator\EmailValidatorServiceProvider::class,
     ...
 ];
 ```
@@ -48,7 +48,7 @@ This package also comes with a facade
 
 'aliases' => [
     ...
-    'EmailValidator' => 'Unicodeveloper\EmailValidator\EmailValidatorFacade',
+    'EmailValidator' => Unicodeveloper\EmailValidator\EmailValidatorFacade::class,
     ...
 ]
 ```
