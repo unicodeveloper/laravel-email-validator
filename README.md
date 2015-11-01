@@ -85,6 +85,7 @@ With the Facades, all you need to do in your application is something like so:
  // returns a true/false if the email address is valid or not
 ```
 
+### Other Methods Available
 ```php
 /**
  * Returns true or false if the email address uses a disposable domain
