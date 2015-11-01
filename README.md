@@ -53,13 +53,103 @@ This package also comes with a facade
 ]
 ```
 
+Publish the config file by running:
+
+```bash
+php artisan vendor:publish
+```
+
+The config file will now be located at `config/emailValidator.php`.
+
+## Configuration
+
+This is the `emailValidator.php` file in the `config` directory. Go to [quickemailverification.com](http://quickemailverification.com/), sign up, get an api Key and insert here
+
+```php
+/**
+ *  Config file that a user/developer can insert quickemailverficationservice api key
+ */
+return [
+    'apiKey' => ''
+];
+```
+
 ## Usage
+With the Facades, all you need to do in your application is something like so:
+
+```php
+ if( EmailValidator::verify('kkkkk@example.com')->isValid()[0] ){
+   ......
+ }
+
+ // returns a true/false if the email address is valid or not
+```
+
+```php
+/**
+ * Returns true or false if the email address uses a disposable domain
+ * @return boolean
+ */
+EmailValidator::verify('kkkkk@example.com')->isDisposable()
+```
+
+```php
+/**
+ * Returns true or false if the API request was successful
+ * @return boolean
+ */
+EmailValidator::verify('kkkkk@example.com')->apiRequestStatus()
+```
+
+```php
+/**
+ * Get the domain of the provided email address
+ * @return string
+ */
+EmailValidator::verify('kkkkk@example.com')->getDomainName()
+```
+
+```php
+/**
+ * Get the local part of an email address
+ * Example: prosperotemuyiwa@gmail.com returns prosperotemuyiwa
+ * @return string
+ */
+EmailValidator::verify('kkkkk@example.com')->getUser()
+```
+
+```php
+/**
+ * Gets a normalized version of the email address
+ * Example: ProsperOtemuyiwa@gmail.com returns prosperotemuyiwa@gmail.com
+ * @return string
+ */
+EmailValidator::verify('kkkkk@example.com')->getEmailAddress()
+```
+
+```php
+/**
+ * Returns true if the domain appears to accept all emails delivered to that domain
+ * @return boolean
+ */
+EmailValidator::verify('kkkkk@example.com')->acceptEmailsDeliveredToDomain()
+```
+
+```php
+/**
+ * Returns true or false if email address is a role address
+ * Example manager@example.com , ceo@example.com will return true
+ * @return boolean
+ */
+EmailValidator::verify('kkkkk@example.com')->isRole()
+```
+
 
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
-## Testing
+## Todo: Testing
 
 You can run the tests with:
 
