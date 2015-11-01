@@ -1,6 +1,6 @@
 # laravel-email-validator
 
-[![Latest Stable Version](https://poser.pugx.org/busayo/laravel-yearly/v/stable.svg)](https://packagist.org/packages/unicodeveloper/laravel-email-validator)
+[![Latest Stable Version](https://poser.pugx.org/unicodeveloper/laravel-email-validator/v/stable.svg)](https://packagist.org/packages/unicodeveloper/laravel-email-validator)
 ![](https://img.shields.io/badge/unicodeveloper-approved-brightgreen.svg)
 [![License](https://poser.pugx.org/unicodeveloper/laravel-email-validator/license.svg)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/unicodeveloper/laravel-email-validator.svg)](https://travis-ci.org/unicodeveloper/laravel-email-validator)
