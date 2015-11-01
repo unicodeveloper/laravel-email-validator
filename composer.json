@@ -1,6 +1,6 @@
 {
     "name": "unicodeveloper/laravel-email-validator",
-    "description": "Provides helper function to validate and verify email addresses",
+    "description": "Provides a Facade to help validate and verify email addresses",
     "keywords": [
         "busayo",
         "laravel-email-validator",
