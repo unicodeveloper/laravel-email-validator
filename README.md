@@ -78,6 +78,20 @@ return [
 With the Facades, all you need to do in your application is something like so:
 
 ```php
+
+ print_r(EmailValidator::verify('kkkkk@example.com')->isValid());
+ // returns Array ( [0] => [1] => Could not get MX records for domain )
+ 
+ print_r(EmailValidator::verify('prosperotemuyiwa@gmail.com')->isValid());
+ // returns Array ( [0] => 1 [1] => SMTP server accepted email address )
+
+ var_dump( EmailValidator::verify('prosperotemuyiwa@gmail.com')->isValid()[0]); 
+ // returns bool(true)
+ 
+ var_dump( EmailValidator::verify('kkkkk@example.com')->isValid()[0]); 
+ // returns bool(false)
+ 
+ 
  if( EmailValidator::verify('kkkkk@example.com')->isValid()[0] ){
    ......
  }
