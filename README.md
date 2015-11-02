@@ -165,6 +165,7 @@ EmailValidator::verify('kkkkk@example.com')->isRole()
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
 ## Todo: Testing
+## Todo: Verify a list of emails
 
 You can run the tests with:
 
