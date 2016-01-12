@@ -9,6 +9,8 @@
 
 > Laravel 5 Package to help validate and verify your email addresses.
 
+**Note:** This depends on the paid service from http://quickemailverification.com/.
+
 ## Install
 
 [PHP](https://php.net) 5.5+ or [HHVM](http://hhvm.com) 3.3+, and [Composer](https://getcomposer.org) are required.
